@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>University Website Design</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.htm"><h1>EduBytes</h1></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a></li>                 
+                    <li><a href="#feature">Features</a></li>
+                    <li><a href="#facilitiesSec">Facilities</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact">About Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <div class="text-box" id="home">
+            <h1>Best HSc Exam Preparetion Platform</h1>
+            <p class="text-box-info">Edubytes has been a leading offline educational platform in Bangladesh. Now, we are bringing our expertise online! Our mobile app is launching soon, and you can be a part of it</p>
+            <a class="hero-btn" href="#contact">Join Our Beta Test</a>
+        </div>
+    </section>
+    <!--Course-->
+    <section class="course" id = "feature">
+        <h1>Why Choose Edubytes?</h1>
+        <p>We follow a structured learning approach to ensure your success. Our method covers three essential parts: Concept, Practice, and Exam. First, we build a strong foundation with in-depth concepts, then reinforce learning through targeted practice, and finally, test your knowledge with real exam simulations.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Concept</h3>
+                <p>Master the fundamentals with clear, well-structured explanations. Our expert-designed lessons make even the toughest topics easy to understand.</p>
+            </div>
+            <div class="course-col">
+                <h3>Practice</h3>
+                <p>Sharpen your skills with a variety of practice problems. Get hands-on experience with topic-wise exercises, quizzes, and interactive examples.</p>
+            </div>
+            <div class="course-col">
+                <h3>Exam</h3>
+                <p>Test your knowledge with exam-style assessments. Simulate real test conditions to build confidence and improve your performance.</p>
+            </div>
+        </div>
+    </section>
+    <!--Facitities-->
+    <section class="facilities" id="facilitiesSec">
+        <h1>Our Facilities</h1>
+        <p>We provide comprehensive support for HSC students across Science, Arts, and Commerce streams. Our platform ensures that every student gets the best resources, guidance, and practice needed to excel in their exams.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/study.jpg" alt="">
+                <h3>Extensive Study Resources</h3>
+                <p>Access a vast collection of books, notes, and digital materials tailored for Science, Arts, and Commerce students. Learn from expertly curated content to strengthen your understanding.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/envernoment.jpg" alt="">
+                <h3>Engaging Learning Environment</h3>
+                <p>Our platform offers interactive lessons, quizzes, and problem-solving exercises, ensuring an engaging and effective learning experience for every student.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/exam.png" alt="">
+                <h3>Personalized Exam Preparation</h3>
+                <p>Practice with real exam-style tests and analytics-based feedback to improve performance. Get targeted guidance for Science, Arts, and Commerce subjects to boost your confidence.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta" id="contact">
+        <h1>Join Our Beta Test & Be the First to Experience Edubytes!</h1>
+        <p>Get early access to our platform and help shape the future of online learning. Have questions? Feel free to ask anything!</p>
+        <a href="mailto:mdnrahmanx27@gmail.com?subject=Beta%20Test%20Inquiry&body=I%20am%20interested%20in%20joining%20the%20beta%20test." class="hero-btn">
+            Join Beta Test
+        </a>
+    </section>
+        <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Edubytes has been a trusted name in offline education, and now we are bringing our expertise online.  
+           Our platform is designed to help HSC students in Science, Arts, and Commerce with a structured approach: Concept, Practice, and Exam.</p>
+        
+        <p>Join our beta test and be part of the future of learning!</p>
+
+        <p>Tech support by <strong>dBytes</strong></p>
+    </section>
+    <!--Javscript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
